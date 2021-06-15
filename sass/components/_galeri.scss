@@ -1,0 +1,42 @@
+.galeri {
+	padding-top: 0;
+
+	&__text--position {
+		position: absolute;
+		left: 83px;
+		bottom: 27px;
+		z-index: 1;
+	}
+
+	&__item::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 70px;
+		left: 0;
+		bottom: 0;
+
+		background: rgba(47, 48, 58, 0.8);
+	}
+}
+
+.galeri__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: calc(-1 * #{$galeri-set-gap});
+}
+
+.galeri__item {
+	position: relative;
+	margin-left: #{$galeri-set-gap};
+	flex-basis: calc((100% * 90px) / 3 - #{$galeri-set-gap});
+}
+
+.galeri__text {
+	font-weight: $fw-bold;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: $primary-wight-color;
+}

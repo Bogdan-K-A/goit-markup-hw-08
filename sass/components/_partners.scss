@@ -1,0 +1,31 @@
+.partners {
+	&__item:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	&__link:hover,
+	&__link:focus {
+		fill: $accent-color;
+		border-color: $accent-color;
+	}
+}
+
+.partners__list {
+	display: flex;
+	justify-content: center;
+}
+
+.partners__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+
+	border: 1px solid $primary-soc-icon-color;
+	border-radius: 4px;
+	fill: $primary-soc-icon-color;
+
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
