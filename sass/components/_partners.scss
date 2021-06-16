@@ -1,6 +1,8 @@
 .partners {
-	&__item:not(:last-child) {
-		margin-right: 30px;
+	@media (min-width: 1200px) {
+		&__item:not(:last-child) {
+			margin-right: 30px;
+		}
 	}
 
 	&__link:hover,
@@ -11,15 +13,30 @@
 }
 
 .partners__list {
-	display: flex;
-	justify-content: center;
+	@media (min-width: 1200px) {
+		display: flex;
+		justify-content: center;
+	}
+
+	@media (max-width: 1200px) {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: calc(-1 * #{$galeri-set-gap});
+		margin-left: calc(-1 * #{$galeri-set-gap});
+	}
+}
+.partners__item {
+	@media (max-width: 1200px) {
+		margin-top: 30px;
+		margin-left: 30px;
+		flex-basis: calc((100% * 60px) / 2 - #{$galeri-set-gap});
+	}
 }
 
 .partners__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 170px;
 	height: 92px;
 
 	border: 1px solid $primary-soc-icon-color;
@@ -28,4 +45,16 @@
 
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	@media (min-width: 480px) {
+		width: 210px;
+	}
+
+	@media (min-width: 768px) {
+		width: 226px;
+	}
+
+	@media (min-width: 1200px) {
+		width: 170px;
+	}
 }

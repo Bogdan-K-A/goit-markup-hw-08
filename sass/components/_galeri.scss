@@ -1,6 +1,10 @@
 .galeri {
 	padding-top: 0;
 
+	@media (min-width: 470px) and (max-width: 1199px) {
+		display: none;
+	}
+
 	&__text--position {
 		position: absolute;
 		left: 83px;
