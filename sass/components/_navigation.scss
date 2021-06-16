@@ -9,8 +9,17 @@
 }
 
 .nav__list {
-	display: flex;
-	align-items: center;
+	display: none;
+
+	@media (min-width: 768px) {
+		display: flex;
+		align-items: center;
+	}
+
+	@media (min-width: 1200px) {
+		display: flex;
+		align-items: center;
+	}
 }
 
 .nav__item {
