@@ -1,9 +1,9 @@
 .hero {
-	max-width: 1600px;
-	min-height: 600px;
+	max-width: 480px;
+	min-height: 400px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 200px 0px;
+	padding: 118px 0px;
 
 	background-color: #c4c4c4;
 	background-image: linear-gradient(
@@ -11,10 +11,64 @@
 			rgba(47, 48, 58, 0.4),
 			rgba(47, 48, 58, 0.4)
 		),
-		url(../img/bg-Img-1600x600.jpg);
+		url(../img/hero/mobile@1x.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+
+	@media (min-width: 1200px) {
+		max-width: 1600px;
+		min-height: 600px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 200px 0px;
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../img/hero/desctopt@1x.jpg);
+	}
+	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+		(min-resolution: 192dpi) and (min-width: 1200px),
+		(min-resolution: 2dppx) and (min-width: 1200px) {
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../img/hero/desctopt@2x.jpg);
+		@media (min-width: 768px) {
+			background-image: linear-gradient(
+					to right,
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../img/hero/tablet@1x.jpg);
+		}
+
+		@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+			(min-resolution: 192dpi) and (min-width: 768px),
+			(min-resolution: 2dppx) and (min-width: 768px) {
+			background-image: linear-gradient(
+					to right,
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../img/hero/tablet@2x.jpg);
+		}
+	}
+
+	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+		(min-resolution: 192dpi) and (max-width: 767px),
+		(min-resolution: 2dppx) and (max-width: 767px) {
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../img/hero/mobile@2x.jpg);
+	}
 
 	&__title--position {
 		width: 696px;

@@ -6,7 +6,7 @@
 
 	@media (min-width: 1200px) {
 		margin-right: 70px;
-		width: 231px;
+		min-width: 231px;
 	}
 
 	&__item:not(:last-child) {
