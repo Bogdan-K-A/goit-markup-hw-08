@@ -16,49 +16,6 @@
 	background-position: center;
 	background-size: cover;
 
-	@media (min-width: 1200px) {
-		max-width: 1600px;
-		min-height: 600px;
-		margin: 0 auto;
-		text-align: center;
-		padding: 200px 0px;
-		background-image: linear-gradient(
-				to right,
-				rgba(47, 48, 58, 0.4),
-				rgba(47, 48, 58, 0.4)
-			),
-			url(../img/hero/desctopt@1x.jpg);
-	}
-	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-		(min-resolution: 192dpi) and (min-width: 1200px),
-		(min-resolution: 2dppx) and (min-width: 1200px) {
-		background-image: linear-gradient(
-				to right,
-				rgba(47, 48, 58, 0.4),
-				rgba(47, 48, 58, 0.4)
-			),
-			url(../img/hero/desctopt@2x.jpg);
-		@media (min-width: 768px) {
-			background-image: linear-gradient(
-					to right,
-					rgba(47, 48, 58, 0.4),
-					rgba(47, 48, 58, 0.4)
-				),
-				url(../img/hero/tablet@1x.jpg);
-		}
-
-		@media (min-device-pixel-ratio: 2) and (min-width: 768px),
-			(min-resolution: 192dpi) and (min-width: 768px),
-			(min-resolution: 2dppx) and (min-width: 768px) {
-			background-image: linear-gradient(
-					to right,
-					rgba(47, 48, 58, 0.4),
-					rgba(47, 48, 58, 0.4)
-				),
-				url(../img/hero/tablet@2x.jpg);
-		}
-	}
-
 	@media (min-device-pixel-ratio: 2) and (max-width: 767px),
 		(min-resolution: 192dpi) and (max-width: 767px),
 		(min-resolution: 2dppx) and (max-width: 767px) {
@@ -68,6 +25,49 @@
 				rgba(47, 48, 58, 0.4)
 			),
 			url(../img/hero/mobile@2x.jpg);
+	}
+
+	@media (min-width: 768px) {
+		min-width: 768px;
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../img/hero/tablet@1x.jpg);
+	}
+
+	@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+		(min-resolution: 192dpi) and (min-width: 768px),
+		(min-resolution: 2dppx) and (min-width: 768px) {
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../img/hero/tablet@2x.jpg);
+	}
+
+	@media (min-width: 1200px) {
+		max-width: 1600px;
+		min-height: 600px;
+		padding: 200px 0px;
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../img/hero/desctop@1x.jpg);
+	}
+	@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+		(min-resolution: 192dpi) and (min-width: 1200px),
+		(min-resolution: 2dppx) and (min-width: 1200px) {
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../img/hero/desctop@2x.jpg);
 	}
 
 	&__title--position {
