@@ -1,6 +1,7 @@
 .filter {
-	&__item:not(:first-child) {
-		margin-left: 8px;
+	&__item:not(:last-child) {
+		margin-right: 8px;
+		margin-bottom: 15px;
 	}
 
 	&__btn:hover,
@@ -15,7 +16,11 @@
 .filter__list {
 	display: flex;
 	margin: 0 0 50px;
-	justify-content: center;
+	flex-wrap: wrap;
+
+	@media (min-width: 768px) {
+		justify-content: center;
+	}
 }
 
 .filter__btn {

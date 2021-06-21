@@ -1,6 +1,6 @@
 .section,
 .portfolio-main {
-	@media (min-width: 480px) {
+	@media (max-width: 1199px) {
 		padding: 60px 0;
 	}
 
@@ -10,17 +10,20 @@
 }
 
 .section__title--margin-bottom {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+
+	@media (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
 }
 
 .section__title {
-	font-size: 36px;
+	font-size: 28px;
 	line-height: 1.18;
 	text-align: center;
 	letter-spacing: 0.03em;
 
-	@media (min-width: 480px) {
-		font-size: 28px;
-		line-height: 1.18;
+	@media (min-width: 1200px) {
+		font-size: 36px;
 	}
 }
