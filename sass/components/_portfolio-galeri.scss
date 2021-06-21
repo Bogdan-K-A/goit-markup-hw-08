@@ -59,7 +59,7 @@
 	color: $secondary-text-color;
 }
 .card-content__rule-tablet {
-	@media (min-width: 768px) {
+	@media (min-width: 768px) and (max-width: 1200px) {
 		width: 304px;
 		height: 106px;
 	}
