@@ -14,20 +14,20 @@
 .portfolio-galeri__set {
 	display: flex;
 	flex-wrap: wrap;
-	// margin-top: calc(-1 * #{$galeri-set-gap});
-	// margin-left: calc(-1 * #{$galeri-set-gap});
+	margin-top: calc(-1 * #{$galeri-set-gap});
+	margin-left: calc(-1 * #{$galeri-set-gap});
 }
 
 .portfolio-galeri__item {
-	// margin-top: 30px;
-	// margin-left: 30px;
-	// // flex-basis: calc((100% * 60px) / 2 - #{$galeri-set-gap});
+	margin-top: 30px;
+	margin-left: 30px;
+	flex-basis: calc((100% * 60px) / 2 - #{$galeri-set-gap});
 
-	// transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	// @media (min-width: 1200px) {
-	// 	flex-basis: calc((100% * 90px) / 3 - #{$galeri-set-gap});
-	// }
+	@media (min-width: 1200px) {
+		flex-basis: calc((100% * 90px) / 3 - #{$galeri-set-gap});
+	}
 }
 
 .portfolio-galeri__thumb {
@@ -39,11 +39,6 @@
 	padding: 20px 24px;
 	border: 1px solid #eeeeee;
 	border-top: none;
-}
-
-.portfolio__card-content:nth-child(-n + 2) {
-	@media (min-width: 768px) {
-	}
 }
 
 .card-content__title {
@@ -62,4 +57,10 @@
 	line-height: 1.87;
 	letter-spacing: 0.03em;
 	color: $secondary-text-color;
+}
+.card-content__rule-tablet {
+	@media (min-width: 768px) {
+		width: 304px;
+		height: 106px;
+	}
 }
