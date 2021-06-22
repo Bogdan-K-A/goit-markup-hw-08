@@ -1436,7 +1436,6 @@ body {
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 15px;
 }
 
 .filter__btn:hover, .filter__btn:focus {
@@ -1446,11 +1445,17 @@ body {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media (max-width: 767px) {
+  .filter__item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
+
 .filter__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 50px;
+  margin: 0 0 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1460,6 +1465,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0 0 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter__list {
+    margin: 0 0 50px;
   }
 }
 
@@ -1563,12 +1575,30 @@ body {
   background: rgba(33, 150, 243, 0.9);
 }
 
+@media (max-width: 767px) {
+  .desc-overlay {
+    display: none;
+  }
+}
+
 .desc-overlay__text {
-  width: 322px;
+  width: 306px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .desc-overlay__text {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .desc-overlay__text {
+    width: 322px;
+  }
 }
 
 .desc-overlay__text--position {

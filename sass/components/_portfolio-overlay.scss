@@ -1,4 +1,7 @@
 .desc-overlay {
+	@media (max-width: 767px) {
+		display: none;
+	}
 	content: "";
 	width: 100%;
 	height: 100%;
@@ -7,17 +10,26 @@
 }
 
 .desc-overlay__text {
-	width: 322px;
+	@media (max-width: 767px) {
+		display: none;
+	}
+
+	width: 306px;
 
 	font-size: 18px;
 	line-height: 1.56;
 	letter-spacing: 0.03em;
 
 	color: $primary-wight-color;
+
+	@media (min-width: 1200px) {
+		width: 322px;
+	}
 }
 
 .desc-overlay__text--position {
 	position: absolute;
+
 	bottom: 63px;
 	left: 24px;
 	z-index: 1;

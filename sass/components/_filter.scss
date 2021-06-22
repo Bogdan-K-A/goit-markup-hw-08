@@ -1,7 +1,6 @@
 .filter {
 	&__item:not(:last-child) {
 		margin-right: 8px;
-		margin-bottom: 15px;
 	}
 
 	&__btn:hover,
@@ -13,13 +12,24 @@
 	}
 }
 
+.filter__item:nth-child(-n + 3) {
+	@media (max-width: 767px) {
+		margin-bottom: 15px;
+	}
+}
+
 .filter__list {
 	display: flex;
-	margin: 0 0 50px;
+	margin: 0 0 30px;
 	flex-wrap: wrap;
 
 	@media (min-width: 768px) {
 		justify-content: center;
+		margin: 0 0 40px;
+	}
+
+	@media (min-width: 1200px) {
+		margin: 0 0 50px;
 	}
 }
 
