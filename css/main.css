@@ -1233,7 +1233,8 @@ body {
 }
 
 .modal {
-  min-width: 450px;
+  width: 100%;
+  max-width: 450px;
   min-height: 609px;
   padding: 40px;
   background: #ffffff;
@@ -1270,10 +1271,10 @@ body {
 .modal__btn-close--position {
   position: absolute;
   top: 8px;
-  left: 411px;
+  right: 8px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .modal__btn-close--position {
     left: 490px;
   }
@@ -1327,9 +1328,15 @@ body {
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: 1200px) {
+  .modal-form__title {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__title--margin-bottom {
@@ -1359,11 +1366,11 @@ body {
 .modal-form__input {
   padding: 11px 12px;
   padding-left: 42px;
-  width: 370px;
+  width: 100%;
   height: 40px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .modal-form__input {
     width: 448px;
   }
@@ -1393,12 +1400,12 @@ body {
 
 .modal-form__comment {
   padding: 12px 16px;
-  width: 370px;
+  width: 100%;
   height: 120px;
   resize: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .modal-form__comment {
     width: 448px;
   }
@@ -1436,17 +1443,24 @@ body {
 .check-label__icon {
   margin-right: 7px;
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   border: 2px solid #212121;
   border-radius: 2px;
 }
 
 .check-label__agrea {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media (min-width: 1200px) {
+  .check-label__agrea {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-label__link {
