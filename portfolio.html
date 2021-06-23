@@ -20,10 +20,8 @@
 
       <!-- --------------------------------- Nav --------------------------------- -->
       <nav class="nav">
-
         <a class="logo header__logo" href="./index.html" title="На главную"><span
             class="logo__text">Web</span>Studio</a>
-
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="./index.html">Студия</a>
@@ -36,8 +34,12 @@
           </li>
         </ul>
       </nav>
-
-
+      <button class="burger-btn is-open" data-menu-button>
+        <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+          <use class="burger-btn__icon-menu" href="./img/icons/sprite.svg#burger-menu"></use>
+        </svg>
+      </button>
+      <!-- ------------------------------ Контакты ------------------------------- -->
       <ul class="contacts__list">
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:info@devstudio.com" title="Email">
@@ -52,9 +54,40 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
-
-
     </div>
+
+    <div class="burger-menu" data-menu>
+      <div class="container burger-container">
+
+        <button class="burger-btn-cross is-open" data-menu-close>
+          <svg width="19" height="19" aria-label="Переключатель мобильного меню">
+            <use class="burger-btn__icon-cross" href="./img/icons/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item"><a class="burger-menu__link" href="">Студия</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link current" href="./portfolio.html">Портфолио</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="">Контакты</a></li>
+        </ul>
+
+        <ul class="burger-contacts__list">
+          <li class="burger-contacts__item"><a class="burger-contacts__link" href="tel:380961111111">+38 096 111 11
+              11</a>
+          </li>
+          <li class="burger-contacts__item"><a class="burger-contacts__link"
+              href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+
+        <ul class="burger-social__list">
+          <li class="burger-social__item"><a class="burger-social__link" href="">Instagram</a></li>
+          <li class="burger-social__item"><a class="burger-social__link" href="">Twitter</a></li>
+          <li class="burger-social__item"><a class="burger-social__link" href="">Facebook</a></li>
+          <li class="burger-social__item"><a class="burger-social__link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
   </header>
 
   <!-- Main содержит основную контентную информацию=========== -->
@@ -532,6 +565,8 @@
 
     </div>
   </footer>
+
+  <script src="./Js/mobile-menu.js"></script>
 
 </body>
 

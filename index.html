@@ -34,6 +34,11 @@
           </li>
         </ul>
       </nav>
+      <button class="burger-btn is-open" data-menu-button>
+        <svg class="burger-btn__icon-menu" width="24" height="16" aria-label="Переключатель мобильного меню">
+          <use href="./img/icons/sprite.svg#burger-menu"></use>
+        </svg>
+      </button>
       <!-- ------------------------------ Контакты ------------------------------- -->
       <ul class="contacts__list">
         <li class="contacts__item">
@@ -51,33 +56,38 @@
       </ul>
     </div>
 
-    <div class="container burger-container">
-      <button class="burger-btn">
-        <svg class="burger-btn__icon" width="18" height="18">
-          <use href="./img/icons/sprite.svg#burger-menu"></use>
-        </svg>
+    <div class="burger-menu" data-menu>
+      <div class="container burger-container">
 
-      </button>
-      <ul class="burger-menu__list">
-        <li class="burger-menu__item"><a class="burger-menu__link" href="">Студия</a></li>
-        <li class="burger-menu__item"><a class="burger-menu__link" href="./portfolio.html">Портфолио</a></li>
-        <li class="burger-menu__item"><a class="burger-menu__link" href="">Контакты</a></li>
-      </ul>
+        <button class="burger-btn-cross is-open" data-menu-close>
+          <svg class="burger-btn__icon-cross" width="19" height="19" aria-label="Переключатель мобильного меню">
+            <use href="./img/icons/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
 
-      <ul class="burger-contacts__list">
-        <li class="burger-contacts__item"><a class="burger-contacts__link" href="tel:380961111111">+38 096 111 11 11</a>
-        </li>
-        <li class="burger-contacts__item"><a class="burger-contacts__link"
-            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      </ul>
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item"><a class="burger-menu__link current" href="">Студия</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="./portfolio.html">Портфолио</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link" href="">Контакты</a></li>
+        </ul>
 
-      <ul class="burger-social__list">
-        <li class="burger-social__item"><a class="burger-social__link" href="">Instagram</a></li>|
-        <li class="burger-social__item"><a class="burger-social__link" href="">Twitter</a></li>|
-        <li class="burger-social__item"><a class="burger-social__link" href="">Facebook</a></li>|
-        <li class="burger-social__item"><a class="burger-social__link" href="">LinkedIn</a></li>
-      </ul>
+        <ul class="burger-contacts__list">
+          <li class="burger-contacts__item"><a class="burger-contacts__link" href="tel:380961111111">+38 096 111 11
+              11</a>
+          </li>
+          <li class="burger-contacts__item"><a class="burger-contacts__link"
+              href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+
+        <ul class="burger-social__list">
+          <li class="burger-social__item"><a class="burger-social__link" href="">Instagram</a></li>
+          <li class="burger-social__item"><a class="burger-social__link" href="">Twitter</a></li>
+          <li class="burger-social__item"><a class="burger-social__link" href="">Facebook</a></li>
+          <li class="burger-social__item"><a class="burger-social__link" href="">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
+
   </header>
 
   <!-- -------------------------------- Main --------------------------------- -->
@@ -601,6 +611,7 @@
       </form>
     </div>
   </div>
+  <script src="./Js/mobile-menu.js"></script>
   <script src="./Js/modal.js"></script>
 </body>
 
