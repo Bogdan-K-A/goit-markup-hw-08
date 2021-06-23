@@ -1,0 +1,43 @@
+.burger-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	z-index: 3;
+
+	background-color: $primary-wight-color;
+}
+.burger-btn {
+}
+.burger-menu {
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+.burger-contacts {
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+.burger-social {
+	&__list {
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}

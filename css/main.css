@@ -330,6 +330,7 @@ summary {
 }
 
 body {
+  position: relative;
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #212121;
@@ -529,6 +530,16 @@ body {
 
 .logo__text {
   color: #2196f3;
+}
+
+.burger-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
