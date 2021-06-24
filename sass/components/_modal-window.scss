@@ -123,6 +123,8 @@
 
 .modal-form__text {
 	margin-bottom: 4px;
+
+	font-weight: $fw-regular;
 	font-size: 12px;
 	line-height: 1.66;
 	letter-spacing: 0.01em;
@@ -208,6 +210,7 @@
 }
 
 .check-label__agrea {
+	font-weight: $fw-regular;
 	font-size: 12px;
 	line-height: 1.16;
 	letter-spacing: 0.03em;

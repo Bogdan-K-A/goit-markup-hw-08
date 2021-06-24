@@ -15,9 +15,9 @@
 }
 
 .address {
-	text-align: center;
 	@media (max-width: 768px) {
 		margin-bottom: 60px;
+		text-align: center;
 	}
 
 	@media (min-width: 1200px) {
@@ -36,6 +36,7 @@
 }
 
 .address__text {
+	font-weight: $fw-regular;
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.7;
@@ -44,6 +45,7 @@
 }
 
 .address__link {
+	font-weight: $fw-regular;
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.7;

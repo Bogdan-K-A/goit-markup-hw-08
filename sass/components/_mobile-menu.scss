@@ -1,29 +1,51 @@
 .burger-menu {
-	display: none;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-
 	z-index: 1;
 	overflow: auto;
 
 	background-color: $primary-wight-color;
 
 	&.is-open {
-		display: block;
+		@media (max-width: 768px) {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 32px;
+	}
+
+	&__link {
+		font-size: 40px;
+		line-height: 1.175;
+	}
+
+	&__link:hover {
+		color: $accent-color;
 	}
 }
 
 .burger-container {
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	min-height: 100%;
 	padding: 48px 40px;
 }
 
 .burger-btn {
-	@media (min-width: 767px) {
+	@media (min-width: 768px) {
 		display: none;
 	}
 }
@@ -45,25 +67,6 @@
 	background-color: transparent;
 }
 
-.burger-menu {
-	&__list {
-		margin-bottom: 302px;
-	}
-
-	&__item:not(:last-child) {
-		margin-bottom: 32px;
-	}
-
-	&__link {
-		font-size: 40px;
-		line-height: 1.175;
-	}
-
-	&__link:hover {
-		color: $accent-color;
-	}
-}
-
 .burger-contacts {
 	&__list {
 		margin-bottom: 64px;
@@ -73,14 +76,21 @@
 		margin-bottom: 32px;
 	}
 
-	&__link {
+	&__link-tel {
 		font-size: 34px;
 		line-height: 1.175;
+		@media (max-width: 480px) {
+			font-size: calc(5px + 6vw);
+		}
+	}
+
+	&__link-email {
+		font-size: 24px;
+		line-height: 1.66;
 		color: $secondary-text-color;
 
-		@media (max-width: 370px) {
-			font-size: 24px;
-			line-height: 1.66;
+		@media (max-width: 480px) {
+			font-size: calc(5px + 4vw);
 		}
 	}
 
@@ -89,9 +99,9 @@
 	}
 }
 
-.current {
-	color: $accent-color;
-}
+// .current {
+// 	color: $accent-color;
+// }
 
 .burger-social {
 	&__list {
@@ -114,5 +124,9 @@
 		line-height: 1.22;
 
 		color: $accent-color;
+
+		@media (max-width: 480px) {
+			font-size: calc(4px + 3vw);
+		}
 	}
 }
